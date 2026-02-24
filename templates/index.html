@@ -3,23 +3,8 @@
 {% block title %}Лендинг{% endblock %}
 
 {% block content %}
-<h3>Наши консультанты</h3>
+  <h3>Лендинг наш</h3>
 
-<table>
-    <tr>
-        <th><a href='/templates/cons1.html' class="button"> {{ buttons.1 }} </a></th>
-        <th><a href='/templates/cons2.html' class="button"> {{ buttons.2 }} </a></th>
-        <th><a href='/templates/cons3.html' class="button"> {{ buttons.3 }} </a></th>
-
-    </tr>
-    <tr>
-        <td><img src="{{ url_for('static', filename='cons1.jpg') }}" width="200" height="300" alt="Фоточка"></td>
-        <td><img src="{{ url_for('static', filename='cons2.jpg') }}" width="200" height="300" alt="Фоточка"></td>
-        <td><img src="{{ url_for('static', filename='cons3.jpg') }}" width="200" height="300" alt="Фоточка"></td>
-    </tr>
-
-</table>
-
-
+<a href="{{ url_for('list_records')}}" class="button"> Показать все записи </a>
 
 {% endblock %}
